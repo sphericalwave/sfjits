@@ -5,17 +5,19 @@
 
   <body>
 
-    <div class="container-fluid d-flex h-100 flex-column">
+    {%- include header.html -%}
 
-      {%- include header.html -%}
+    <div class="container-fluid ">
 
-      <div class="row flex-grow-1 d-flex">
+      <div class="row ">
         <!-- <div class="col text-left p-3"> -->
           {{ content }}
         <!-- </div> -->
       </div>
 
-      {%- include footer.html -%}
+      <div class="row bg-light">
+        {%- include footer.html -%}
+      </div>  <!-- row -->
 
       {%- include bootstrap-includes.html -%}
 
