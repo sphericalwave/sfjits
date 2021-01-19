@@ -72,7 +72,7 @@ body {
   color: #fff;
   text-align: left;
   background-color: #222;
-  padding-top: 70px; //for z nav bar
+  padding-top: 99px; //for z nav bar
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
