@@ -6,42 +6,46 @@ layout: default
 
   <div class="row">
 
-<div>
-  <!-- Title -->
-  <a href="{{post.url | prepend: site.baseurl}}">
-    <h1 class="mb-0">{{page.title}}</h1>
-  </a>
+    <div class="col-10 col-md-8 mx-auto">
 
+      <div> <!--Post Header-->
 
+        <!-- Title -->
+        <a href="{{post.url | prepend: site.baseurl}}">
+          <h1 class="mb-0">{{page.title}}</h1>
+        </a>
 
-  <!--Tags -->
-  <ul class="tags p-0 m-0">
-    {% for tag in page.tags %}
+        <!--Tags -->
+        <ul class="tags p-0 m-0">
+          {% for tag in page.tags %}
 
-      <a class="btn btn-outline-secondary btn-sm py-0 text-small" href="{{page.permalink}}" role="button">
-        {{tag | downcase | replace:" ","-" }}
-      </a>
+            <a class="btn btn-outline-secondary btn-sm py-0 text-small" href="{{page.permalink}}" role="button">
+              {{tag | downcase | replace:" ","-" }}
+            </a>
 
-    {% endfor %}
-  </ul>
+          {% endfor %}
+        </ul>
 
-  <!-- date -->
-  <small class="text-left font-italic">
-      {{ page.date | date_to_string: "ordinal", "US" }}
-  </small>
+        <!-- date -->
+        <small class="text-left font-italic">
+            {{ page.date | date_to_string: "ordinal", "US" }}
+        </small>
 
-  <hr class="m-0">
+        <hr class="m-0">
 
-  </div>
+      </div> <!--Post Header-->
 
-  <!-- Content -->
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+      <!-- Content -->
+      <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+      </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+      {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+      {%- endif -%}
+
+    </div> <!--col-->
 
   </div> <!--row-->
+
 </div> <!--container-->
