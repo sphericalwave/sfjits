@@ -4,15 +4,28 @@ title: "Blog"
 permalink: /blog.html/
 ---
 
-<h1>Blog</h1>
+<div class="container pb-5">
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+  <div class="row">
 
-{%- include post-list.html -%}
+    <div class="col-10 col-md-8 mx-auto">
+
+      <h1>Blog</h1>
+      <hr class="m-0">
+
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
+
+      {%- include post-list.html -%}
+
+    </div> <!--col-->
+
+  </div> <!--row-->
+
+</div> <!--container-->
