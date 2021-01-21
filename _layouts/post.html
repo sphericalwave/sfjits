@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<div class="py-3">
+<div class="container">
+
+  <div class="row">
+
+<div>
   <!-- Title -->
   <a href="{{post.url | prepend: site.baseurl}}">
     <h1 class="mb-0">{{page.title}}</h1>
@@ -39,6 +43,5 @@ layout: default
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
-  <!-- <a class="u-url" href="{{ page.url | relative_url }}" hidden> </a> -->
-
-<!-- </article> -->
+  </div> <!--row-->
+</div> <!--container-->
