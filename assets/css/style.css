@@ -3,7 +3,7 @@ body {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: 'Balsamiq Sans', cursive;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   color: #fff;
   text-align: left;
   background-color: #222;

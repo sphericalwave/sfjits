@@ -11,13 +11,15 @@ permalink: /blog/
 
     <div class="col-10 col-md-8 mx-auto">
 
-      <hr class="m-0">
-
         {% for post in site.posts %}
 
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<div class="mb-3">
+          <a href="{{ post.url }}">
+          <h3 class="mb-0">{{ post.title }}</h3>
+          </a>
+          <small >{{post.date | date: '%B %d, %Y'}}</small>
+</div>
 
-            <small>{{post.date | date: '%B %d, %Y'}}</small>
 
         {% endfor %}
 
