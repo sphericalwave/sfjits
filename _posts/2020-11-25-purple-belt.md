@@ -4,7 +4,7 @@ title:  "Purple Belt"
 date:   2020-11-25 03:33:03 -0300
 categories: jiujitsu
 tags: JiuJitsu Philosophy
-permalink: Purple_Belt
+permalink: purple_belt
 image: https://drscdn.500px.org/photo/1025389804/m%3D900/v2?sig=ecce63d32b37069927d3d82ab571bfb6b7531c58fcfe1bbf4449715ec1bf339e
 ---
 
