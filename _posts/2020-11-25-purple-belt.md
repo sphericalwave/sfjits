@@ -29,4 +29,8 @@ The strategy that's gotten me this far is
 
     <img class="img-fluid" src='https://drscdn.500px.org/photo/1025389804/m%3D900/v2?sig=ecce63d32b37069927d3d82ab571bfb6b7531c58fcfe1bbf4449715ec1bf339e' alt='PurpleBelt_and_Stripes by Aaron Anthony on 500px.com'>
 
+    <!-- <img class="img-fluid" src='https://live.staticflickr.com/65535/50874887638_245bca60ea_h.jpg' alt='PurpleBelt_and_Stripes by Aaron Anthony on 500px.com'>
+
+    <img class="img-fluid" src='https://live.staticflickr.com/65535/50874887613_4167046d5d_h.jpg' alt='PurpleBelt_and_Stripes by Aaron Anthony on 500px.com'> -->
+
 </div>
