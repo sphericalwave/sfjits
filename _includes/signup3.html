@@ -1,31 +1,56 @@
-<form>
+<form method="post" class="af-form-wrapper" accept-charset="UTF-8"
+  action="https://www.aweber.com/scripts/addlead.pl">
 
-  <div class="jumbotron p-4 m-0">
+  <div style="display: none;">
+    <input type="hidden" name="meta_web_form_id" value="128800415" />
+    <input type="hidden" name="meta_split_id" value="" />
+    <input type="hidden" name="listname" value="awlist5676899" />
+    <input type="hidden" name="redirect" value="https://superfluidjiujitsu.com/thankyou.html" id="redirect_d253787b601fff61a3173a675f7ffec5" />
+    <input type="hidden" name="meta_redirect_onlist" value="https://superfluidjiujitsu.com/alreadysubscribed.html" />
+    <input type="hidden" name="meta_adtracking" value="Email Capture 1" />
+    <input type="hidden" name="meta_message" value="1" />
+    <input type="hidden" name="meta_required" value="name,email" />
+    <input type="hidden" name="meta_forward_vars" value="1" />
+    <input type="hidden" name="meta_tooltip" value="" />
+  </div>
 
-    <h3 class="display-7">Secrets of Invincible Jiujitsu</h3>
+  <div class="jumbotron p-4 m-0" id="af-form-128800415">
+
+    <h3 class="display-5">Secrets of Invincible Jiujitsu</h3>
     <p class="lead">Avoid injury, Be Pain Free, Move Better, Rank Up.</p>
     <hr class="my-2">
 
-    <!-- <video width="325" height="325"  autoplay loop>
-      <source src="/assets/img/SuperfluidJits1.m4v" type="video/mp4">
-    </video> -->
-
-    <!-- <div class="embed-responsive embed-responsive-1by1">
-      <iframe class="embed-responsive-item" src="/assets/img/SuperfluidJits1.m4v"></iframe>
-    </div> -->
-
+    <!--name-->
     <div class="form-group">
-      <label for="nameInput">Name</label>
-      <input type="text" class="form-control" id="nameInput" placeholder="Ryan Hall">
-    </div>
+      <label for="awf_field-110528984">Name: </label>
+      <div class="af-textWrap">
+        <input id="awf_field-110528984"
+               type="text" name="name" class="form-control" value=""
+               onfocus=" if (this.value == '') { this.value = ''; }"
+               onblur="if (this.value == '') { this.value='';} "
+               tabindex="500" />
+      </div>
 
+      <div class="af-clear">
+      </div>
+    </div> <!--end of name-->
+
+    <!--email-->
     <div class="form-group">
-      <label for="emailInput">Email</label>
-      <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
+      <label  for="awf_field-110528985">Email: </label>
+      <div class="af-textWrap">
+        <input class="form-control"
+                id="awf_field-110528985" type="text" name="email" value=""
+                tabindex="501"
+                onfocus=" if (this.value == '') { this.value = ''; }"
+                onblur="if (this.value == '') { this.value='';} " />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
-    <button type="submit" class="btn btn-success btn-block">Email me the Secrets!</button>
+      </div>
+
+    </div> <!--end of email-->
+
+    <button type="submit" name="submit" tabindex="502" class="btn btn-success btn-block">Email me the Secrets!</button>
 
   </div>
 
