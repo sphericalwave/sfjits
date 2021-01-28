@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Alex's Black Belt"
+title:  "Alex Awarded Black Belt"
 date:   2021-01-18 17:46:03 -0300
-categories: promotions
+categories: promotion
 permalink: "alexs_blackbelt"
 ---
 
