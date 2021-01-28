@@ -3,8 +3,8 @@ layout: post
 title:  "Upright Go"
 date:   2020-11-22 17:46:03 -0300
 categories: jekyll update
-tags: posture refferal discipline
-image: /assets/img/biernacki_base_posture_structure.png
+tags: posture gadgets
+image: "https://live.staticflickr.com/65535/50874725383_b770e484e3_k.jpg"
 permalink: upright_go
 ---
 
@@ -21,6 +21,6 @@ I prefer the magnetic necklace over the stickers.
 
 <div class="col my-auto">
 
-   <img class="img-fluid" src="https://live.staticflickr.com/65535/50874725383_b770e484e3_k.jpg" alt='upright_go'>
+   <img class="img-fluid rounded mx-auto d-block" src="https://live.staticflickr.com/65535/50874725383_b770e484e3_k.jpg" alt='upright_go'>
 
 </div>

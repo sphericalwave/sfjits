@@ -2,9 +2,9 @@
 layout: post
 title:  "Purple Belt"
 date:   2020-11-25 03:33:03 -0300
-categories: jiujitsu
-tags: promotion
+tags: promotions
 permalink: purple_belt
+image: "https://live.staticflickr.com/65535/50874887613_3fbd8f78b7.jpg"
 ---
 
 I received my purple belt last night.
@@ -14,7 +14,7 @@ Looking back I can see I've come a long way.
 
 <div class="col my-auto pb-3">
 
-    <img class="img-fluid" src="https://live.staticflickr.com/65535/50874887613_3fbd8f78b7.jpg" alt='Blue and Fresh Purple Belts'>
+    <img class="img-fluid rounded mx-auto d-block" src="https://live.staticflickr.com/65535/50874887613_3fbd8f78b7.jpg" alt='Blue and Fresh Purple Belts'>
 
 </div>
 
@@ -33,7 +33,7 @@ The strategy that's gotten me this far is
 
 <div class="col my-auto pb-3">
 
-    <img class="img-fluid" src='https://drscdn.500px.org/photo/1025389804/m%3D900/v2?sig=ecce63d32b37069927d3d82ab571bfb6b7531c58fcfe1bbf4449715ec1bf339e' alt='PurpleBelt_and_Stripes by Aaron Anthony on 500px.com'>
+    <img class="img-fluid rounded mx-auto d-block" src='https://drscdn.500px.org/photo/1025389804/m%3D900/v2?sig=ecce63d32b37069927d3d82ab571bfb6b7531c58fcfe1bbf4449715ec1bf339e' alt='PurpleBelt_and_Stripes by Aaron Anthony on 500px.com'>
 
 </div>
 
@@ -86,7 +86,7 @@ wearing that dashing combo.
 
 <div class="col my-auto pb-3">
 
-    <img class="img-fluid" src="https://live.staticflickr.com/65535/50875487846_09b1c56ce5.jpg" alt='Blue and Fresh Purple Belts'>
+    <img class="img-fluid rounded mx-auto d-block" src="https://live.staticflickr.com/65535/50875487846_09b1c56ce5.jpg" alt='Blue and Fresh Purple Belts'>
 
 </div>
 
