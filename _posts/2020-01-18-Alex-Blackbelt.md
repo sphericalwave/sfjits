@@ -6,8 +6,6 @@ categories: promotions
 permalink: "alexs_blackbelt"
 ---
 
-
-
 Long time training partner and perpetual antagonist Alex earned his black belt today.
 Alex was a white belt when I first met him in 2012.
 He allegedly started 6 months ahead of me.
@@ -21,17 +19,27 @@ I've been calling him "the Wolverine" though he's more of an academic like "Beas
 I fell off the jits wagon for a couple of years because of engineering school and later working in Newfoundland.
 When i cam back Alex was a brown belt.
 
-For the last three years Alex taught many of classes that I attended and laid the smack down at open rolls.
-We were all pretty much in awe of his ability, a lethal combination of ferocity and technicality.
+For the last four years Alex taught many of classes that I attended and laid the smack down at open rolls.
+We were all pretty much in awe of his ability, a lethal combination of ferocity and technicality. He's also a terrific teacher with a commanding presence.
 He has since gone to open his own gym with his famous cousin TJ Grant.
-So I don't get beat up by him as much but my intention is to attend his open mat once a month.
+So I don't get beat up by him as much these days. Except occasionally at his open mats.
 
 It's awesome to see a friend get his black belt and be recognized for a level of mastery.
 Mostly because that's a level I aspire to and also it's great to see someone achieve sustained success.
 
-His skills don't seem invincible to me anymore as a purple belt but I still wouldn't bet against him in a death match.
-My perspective now is he has more mat time solving bio-mechanical riddles under pressure.
-And he certainly knows a lot about jiujitsu, including the obnoxious worm guard.
+<div class="col my-auto mx-auto pb-3">
+   <img class="img-fluid" src="https://live.staticflickr.com/65535/50884430151_6403b85bcb.jpg" alt='alexs_black_belt'>
+</div>
 
-Also shout out to Cam who also got his black belt, a cool guy and killer on the mats.
+Alex doesn't seem invincible to me anymore as a purple belt but I still wouldn't bet against him in a death match.
+My perspective now is he has more mat time solving bio-mechanical riddles under pressure.
+It seems like jits is an accumulation of tactics and techniques, and when you're a blue belt you still don't know much compared to a black belt.
+So it's a change of context and each person travels their own path.
+Alex certainly knows a lot about jiujitsu, including the obnoxious worm guard.
+
+P.S. Shout out to Cam Daniels who also got his black belt, a cool guy and killer on the mats.
 I don't Cam as well but last time I rolled with him he tapped me at least 3 times.
+
+Shine on you crazy Diamonds!
+
+💎
