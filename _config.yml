@@ -1,18 +1,51 @@
-title: Superfluid Jiujitsu
-email: aaron@superfluidjiujitsu.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Strategies, concepts, drills and contraptions to help you develop Superfluid Jiujitsu.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
+title: Superfluid Jiu-Jitsu
+tagline: Maintenance for your hardware
+description: >-
+  The fitWrench Suite for hobbyist grapplers: fuel, maintenance, engine and mind
+  apps from a black belt who has barely missed a day of training.
+url: "https://superfluidjiujitsu.com"
+baseurl: ""
+logo: /assets/img/SphericalWave_500px.png
+image: /assets/img/SphericalWave_500px.png
+lang: en
 
-# Build settings
-#theme: minima
+author:
+  name: Aaron
 
+# Waitlist. No third-party form or tracking script yet, so the form opens a
+# pre-filled email to this address.
+# TODO(Kit): when the Kit (ConvertKit) form exists, set waitlist_action to its
+# form action URL and the form posts there instead of opening an email.
+waitlist_email: "hello@sphericalwave.com"
+waitlist_action: ""
+
+permalink: /:categories/:title
+
+# GitHub Pages legacy build: only whitelisted plugins.
 plugins:
-  - jekyll-paginate
-  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
-paginate: 1
-paginate_path: "/page:num/"
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Jekyll defaults are re-listed so Gemfile/vendor stay excluded too.
+exclude:
+  - .sass-cache
+  - .jekyll-cache
+  - .ruby-version
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - design
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

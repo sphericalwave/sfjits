@@ -1,25 +1,16 @@
 ---
+layout: page
+title: "404: Page not found"
 permalink: /404.html
-layout: default
+sitemap: false
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<section class="sw-home__hero sw-home__hero--statement">
+  <span class="sw-home__chip"><span class="sw-home__label">404</span></span>
+  <h1 class="sw-home__title">Lost the grip on that one.</h1>
+  <p class="sw-home__lead">That page doesn't exist, or it moved when the site was rebuilt.</p>
+  <div class="sw-home__cta">
+    <a href="{{ '/' | relative_url }}" class="sw-home__btn sw-home__btn--primary">Back home</a>
+    <a href="{{ '/blog/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">Belt journal</a>
+  </div>
+</section>

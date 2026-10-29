@@ -1,0 +1,139 @@
+// Typography
+//
+// Headings, body text, lists, and other misc typographic elements.
+
+h4, h6 {
+  margin-bottom: 0rem;
+  // font-weight: 600;
+  // line-height: 1.25;
+  color: $gray-1;
+  text-rendering: optimizeLegibility;
+  font-family: 'Space Grotesk', sans-serif; 
+
+}
+
+h1 {
+  // text-align: center; 
+  font-family: 'Space Grotesk', sans-serif; 
+  color: #efefef; 
+  font-size: 3rem;//52px; 
+  font-weight: 900; 
+  line-height: 1.2em; 
+  letter-spacing: -1.1px;
+  padding: 0; 
+  margin: 0;
+}
+
+h2 {
+  // text-align: center; 
+  font-family: 'Space Grotesk', sans-serif; 
+  color: #efefef; 
+  font-size: 2.7rem;//52px; 
+  font-weight: 900; 
+  line-height: 1.2em; 
+  letter-spacing: -1.1px;
+  padding: 0; 
+  margin: 0;
+}
+
+h3 {
+  // text-align: center; 
+  font-family: 'Space Grotesk', sans-serif; 
+  color: #efefef; 
+  font-size: 2rem;//52px; 
+  font-weight: 900; 
+  line-height: 1.2em; 
+  letter-spacing: -1.1px;
+  padding: 0; 
+  margin: 0;
+}
+
+h5 {
+  // text-align: center; 
+  color: #fff; 
+  font-family: 'Space Grotesk', sans-serif; 
+  font-size: 1.1 rem; //18px; 
+  font-weight: 300; 
+  text-transform: uppercase; 
+  letter-spacing: 12px; 
+  padding: 0; 
+  margin: 0;
+}
+
+time {
+  font-size: 0.7rem;
+}
+
+//overrides default given by safari and chrome
+p {
+    color: #efefef; 
+    font-size: 0.9rem; 
+    font-weight: 400; 
+    font-family: 'Archivo', sans-serif;
+    padding: 0; 
+    margin: 0.2rem 0;
+}
+
+small {
+  font-size: 0.6rem;
+}
+
+strong {
+  color: $gray-1;
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+
+  &[title] {
+    cursor: help;
+    border-bottom: 1px dotted $gray-1;
+  }
+}
+
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid $gray-1;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 30em) {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+
+// Markdown footnotes
+//
+// See the example content post for an example.
+
+// Footnote number within body text
+// a[href^="#fn:"],
+// // Back to footnote link
+// a[href^="#fnref:"] {
+//   display: inline-block;
+//   margin-left: .1rem;
+//   font-weight: bold;
+// }
+
+// List of footnotes
+.footnotes {
+  margin-top: 2rem;
+  font-size: 85%;
+}

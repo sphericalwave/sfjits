@@ -1,0 +1,6 @@
+{%- comment -%} A belt bar: include belt.html rank="blue" stripes=2 label="Fuel" {%- endcomment -%}
+<span class="sf-belt sf-belt--{{ include.rank }}" role="img" aria-label="{{ include.label | default: include.rank | capitalize }} belt{% if include.stripes %}, {{ include.stripes }} stripes{% endif %}">
+  <span class="sf-belt__bar">
+    {%- if include.stripes -%}{%- for i in (1..include.stripes) -%}<span class="sf-belt__stripe"></span>{%- endfor -%}{%- endif -%}
+  </span>
+</span>

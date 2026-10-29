@@ -1,46 +1,25 @@
 ---
-layout: default
-title: "Blog"
+layout: page
+title: Belt journal
 permalink: /blog/
+description: "Notes from white belt to black belt: promotions, training partners and favourite submissions."
 ---
 
-<div class="container pb-5">
+<section class="sw-home__hero">
+  <span class="sw-home__chip"><span class="sw-home__label">Journal</span></span>
+  <h1 class="sw-home__title">Belt journal</h1>
+  <p class="sw-home__lead">Notes from the road to black belt: promotions, training partners, favourite submissions.</p>
+</section>
 
-  <div class="row">
+<ul class="sf-post-list mt-4">
+  {%- for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+  </li>
+  {%- endfor %}
+</ul>
 
+<hr class="sw-home__wave-line">
 
-    <div class="col-10 col-md-8 mx-auto">
-
-      <h1>Blog</h1>
-
-        {% for post in site.posts %}
-
-          <div class="mb-3">
-              <a href="{{ post.url }}">
-                <h3 class="mb-0">{{ post.title }}</h3>
-              </a>
-
-              <!--Tags -->
-                {% for tag in post.tags %}
-
-                  <a class="btn btn-outline-secondary btn-sm py-0 text-small"
-                      href="{{page.permalink}}"
-                      role="button">
-                    {{tag | downcase | replace:" ","-" }}
-                  </a>
-
-                {% endfor %}
-
-              <small class="d-block py-1">{{post.date | date: '%B %d, %Y'}}</small>
-
-
-
-          </div>
-
-        {% endfor %}
-
-    </div> <!--col-->
-
-  </div> <!--row-->
-
-</div> <!--container-->
+{% include waitlist.html %}
