@@ -1,0 +1,47 @@
+{%- comment -%}
+  Founding-member waitlist. No third-party script: with no `waitlist_action`
+  set, the form opens a pre-filled email to `waitlist_email` (works without JS
+  too, via the mailto action). TODO(Kit): set `waitlist_action` in _config.yml
+  to the Kit form URL and rename the email field to whatever Kit expects
+  (`email_address`), then remove the mailto branch below.
+{%- endcomment -%}
+<section class="sw-home__cta-band sf-waitlist" id="waitlist" aria-labelledby="waitlist-title">
+  <span class="sw-home__label">Founding members · coming soon</span>
+  <h2 id="waitlist-title">Get on the founding-member list.</h2>
+  <p>The first 100 members get a founding price locked in for life, and a red-stripe hardware belt. One email when the suite opens. No spam.</p>
+
+  {%- if site.waitlist_action != "" %}
+  <form class="sf-waitlist__form" action="{{ site.waitlist_action }}" method="post">
+    <label for="waitlist-email-{{ include.id | default: 'main' }}" class="visually-hidden">Email address</label>
+    <input id="waitlist-email-{{ include.id | default: 'main' }}" name="email_address" type="email" class="form-control" placeholder="you@example.com" autocomplete="email" required>
+    <button class="sw-home__btn sw-home__btn--primary" type="submit">Join the waitlist</button>
+  </form>
+  {%- else %}
+  <form class="sf-waitlist__form" action="mailto:{{ site.waitlist_email }}" method="get" data-mailto="{{ site.waitlist_email }}">
+    <input type="hidden" name="subject" value="Waitlist">
+    <label for="waitlist-email-{{ include.id | default: 'main' }}" class="visually-hidden">Email address</label>
+    <input id="waitlist-email-{{ include.id | default: 'main' }}" name="body" type="email" class="form-control" placeholder="you@example.com" autocomplete="email" required>
+    <button class="sw-home__btn sw-home__btn--primary" type="submit">Join the waitlist</button>
+  </form>
+  <p class="sf-waitlist__status" role="status" hidden></p>
+  <p class="sf-waitlist__note">Opens your email app with a short note to {{ site.waitlist_email }}. Hit send and you're on the list.</p>
+  <script>
+  (function () {
+    var form = document.currentScript.parentNode.querySelector("form[data-mailto]");
+    if (!form) return;
+    var status = form.parentNode.querySelector(".sf-waitlist__status");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = form.querySelector('input[type="email"]');
+      if (!email.checkValidity()) { email.reportValidity(); return; }
+      var body = "Add me to the Superfluid Jiu-Jitsu founding-member waitlist.\n\nEmail: " + email.value.trim();
+      window.location.href = "mailto:" + form.dataset.mailto +
+        "?subject=" + encodeURIComponent("Founding member waitlist") +
+        "&body=" + encodeURIComponent(body);
+      status.hidden = false;
+      status.textContent = "Your email app should be open with the note ready. Send it and you're in.";
+    });
+  })();
+  </script>
+  {%- endif %}
+</section>

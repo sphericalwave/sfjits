@@ -1,30 +1,41 @@
 ---
-layout: default
-title: "About"
+layout: page
+title: About
 permalink: /about/
+description: "Aaron: Brazilian jiu-jitsu black belt and engineer in Nova Scotia, building the fitWrench Suite."
 ---
 
-<div class="container pb-5">
+<section class="sw-home__hero">
+  <span class="sw-home__chip"><span class="sw-home__label">About · Aaron</span></span>
+  <h1 class="sw-home__title">I survived jiu-jitsu. That's the product.</h1>
+  <p class="sw-home__lead">I'm a Brazilian jiu-jitsu black belt and an engineer in Nova Scotia. I've had almost no injuries in my whole career and barely missed any training time. Not because I'm tough. Because taking care of my body was priority number one.</p>
+</section>
 
-  <div class="row">
+<hr class="sw-home__wave-line">
 
-    <div class="col-10 col-md-8 mx-auto">
+<div class="sw-home__bento">
+  <div class="sw-home__glass sw-home__panel sw-home__panel--accent">
+    <span class="sw-home__label">The problem</span>
+    <p class="sw-home__panel-title">Jiu-jitsu beats people up.</p>
+    <p>It's fun, addictive, social and great exercise. It also wrecks a lot of the people who love it. Somebody tells them they're getting older and should slow down, and they take on that limit as their own.</p>
+    <p>I don't think age is mostly trips around the sun. It's years of putting your body at #24 on the list. Train like age is a choice.</p>
+  </div>
+  <div class="sw-home__glass sw-home__panel sw-home__panel--photo sw-home__panel--center">
+    <img src="https://live.staticflickr.com/65535/50874887613_3fbd8f78b7.jpg" alt="Aaron's blue belt next to a new purple belt" loading="lazy">
+    <span class="sw-home__label">Purple belt, 2020</span>
+  </div>
+</div>
 
-      <h1>About</h1>
+<div class="sw-home__glass sw-home__panel">
+  <span class="sw-home__label">The fix</span>
+  <p class="sw-home__panel-title">Maintenance for your hardware.</p>
+  <p>Fuel, a short daily durability session, an eye on recovery, and a mind that doesn't hand its status to whoever's knocking it down. I built apps for each of those for myself. The fitWrench Suite is those apps, cleaned up for every grappler who wants to keep rolling for decades.</p>
+  <div class="sw-home__cta sf-cta-start mt-3">
+    <a href="{{ '/apps/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">See the apps</a>
+    <a href="{{ '/blog/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">Read the belt journal</a>
+  </div>
+</div>
 
-      <p>Aaron is a purple belt and electrical engineer.
-        He likes back attacks and standing guard passing.
-        His favorite submissions are Hadaka Jime and Ichiru Sankaku.
-        His favorite move is the rolling back attack but he'll settle for half guard passing.
-        He's currently developing his Feet to Floor skills.
-        And he doesn't like wrestling, too inefficient.
-        His goal has been to be a Superfluid Jiujitsu Blackbelt, since white belt.
-      </p>
+<hr class="sw-home__wave-line">
 
-      <img class="img-fluid rounded mx-auto d-block" src="https://live.staticflickr.com/65535/50874887638_93af7e4fe0.jpg" alt='PurpleBelt_and_Stripes by Aaron Anthony on 500px.com'>
-
-    </div> <!--col-->
-
-  </div> <!--row-->
-
-</div> <!--container-->
+{% include waitlist.html %}

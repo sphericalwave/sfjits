@@ -1,77 +1,147 @@
 ---
-layout: default
+layout: page
+title: Superfluid Jiu-Jitsu — maintenance for your hardware
+description: "The fitWrench Suite for hobbyist grapplers: fuel, maintenance, engine and mind apps from a black belt who has barely missed a day of training."
 ---
-<!--index.html-->
 
-<div class="container">
+<section class="sw-home__hero sw-home__hero--statement sw-enter">
+  <span class="sw-home__chip">
+    <span class="sw-home__dot"></span>
+    <span class="sw-home__label">fitWrench Suite · for hobbyist grapplers</span>
+  </span>
 
-    <div class="row pt-3">
+  <h1 class="sw-home__title">Maintenance for your hardware.</h1>
+  <p class="sw-home__lead">Jiu-jitsu is fun, addictive and great exercise, and it beats people up. The fitWrench Suite is everything that keeps you on the mats that isn't technique: fuel it, maintain it, measure it, and train the mind running it. About 15 minutes a day, from a black belt who's barely missed a day.</p>
 
-      <div class="col-lg-8 my-auto">
+  <div class="sw-home__cta">
+    <a href="#waitlist" class="sw-home__btn sw-home__btn--primary">Join the waitlist</a>
+    <a href="{{ '/apps/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">See the apps</a>
+  </div>
 
-          <img class="img-fluid mx-auto d-block" src="/assets/img/SphericalWave_500px.png" alt='c60_logo'>
+  <div class="sw-home__ornament" aria-hidden="true">
+    <span class="sw-home__orn-grow"></span>
+    <span class="sw-home__orn-mid"></span>
+    <span class="sw-home__orn-grow"></span>
+  </div>
+</section>
 
-      </div>
+<hr class="sw-home__wave-line">
 
-        <div class="col-lg-4 pb-3 pb-md-0 my-auto">
-          {% include signup3.html %}
-        </div>
-
-    </div>
-
-    <div class="row py-3">
-
-      <div class="col-12">
-        <h3>Highest Recomendations</h3>
-      </div>
-
-      <div class="col">
-        <div class="card" >
-          <img class="card-img-top" src="http://intensiondesigns.ca/wp-content/uploads/2018/03/IMG_1104-665x1024.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Floating Compression</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div> <!--end col -->
-
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/SphericalWave_500px.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Alkaline Nutrition</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div> <!--end col -->
-
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top rounded" src="https://ucarecdn.com/7e8bfdb4-7be8-4131-96e1-8af05d9cf180/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Iron Neck</h5>
-            <p class="card-text">It's not cheap but your spine is priceless.
-              I recomend the hell out of this thing.
-              Guillotines and Darces are more defendable with an Iron Neck.</p>
-          </div>
-        </div>
-      </div> <!--end col -->
-
-    </div>  <!--end row -->
-
-    <!--latest posts-->
-    <div class="row">
-      <div class="col">
-        <h4>Latest Posts</h4>
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
-              <!-- {{ post.excerpt }} -->
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-
+<div class="sw-home__bento sw-enter-2">
+  <div class="sw-home__glass sw-home__panel sw-home__panel--accent">
+    <span class="sw-home__label">Hardware belts</span>
+    <p class="sw-home__panel-title">You're a black belt on the mats. What belt are you at taking care of your body?</p>
+    <p>Every pillar has its own belt, earned by showing up: days logged, sessions done, recovery respected. Your hardware belt is your lowest one, so the weakest link shows.</p>
+    <p class="mb-3">Earned slowly, over months, like the real thing. Consistency, not intensity.</p>
+    <a href="{{ '/belts/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">How belts work</a>
+  </div>
+  <div class="sw-home__glass sw-home__panel" aria-label="Example hardware belts">
+    <span class="sw-home__label">Example</span>
+    <div class="sf-belt-row"><span>Fuel</span>{% include belt.html rank="blue" stripes=2 label="Fuel: blue" %}</div>
+    <div class="sf-belt-row"><span>Maintain</span>{% include belt.html rank="purple" stripes=1 label="Maintain: purple" %}</div>
+    <div class="sf-belt-row"><span>Engine</span>{% include belt.html rank="white" stripes=3 label="Engine: white" %}</div>
+    <div class="sf-belt-row"><span>Mind</span>{% include belt.html rank="blue" label="Mind: blue" %}</div>
+    <p class="mt-3">Hardware belt: <strong>white, 3 stripes</strong>. The engine is the weak link.</p>
+  </div>
 </div>
+
+<hr class="sw-home__wave-line">
+
+<section aria-labelledby="pillars-title">
+  <span class="sw-home__label">The suite</span>
+  <h2 class="sf-section-title" id="pillars-title">Four pillars. One subscription.</h2>
+  <p class="sw-home__lead">Each app does one job, and they make each other smarter. Recovered today? Your session goes harder. Logged a hard roll? Recovery and refuel come up next.</p>
+
+  <div class="sw-home__grid sw-home__grid--4">
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">01 · Fuel</span>
+      <h3>Fuel it</h3>
+      <p class="sf-apps">fuelLine + Potions</p>
+      <p>Food, water and supplements, logged in seconds. Protein and water targets for training days.</p>
+      {% include soon.html %}
+    </article>
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">02 · Maintain</span>
+      <h3>Maintain it</h3>
+      <p class="sf-apps">bioMechanic + suit</p>
+      <p>15-minute durability sessions, picked by what hurts. A body map for range of motion and problem spots.</p>
+      {% include soon.html %}
+    </article>
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">03 · Engine</span>
+      <h3>Measure it</h3>
+      <p class="sf-apps">flow</p>
+      <p>Heart-rate zones, HRV, resting heart rate and recovery, so you know when to push and when to cruise.</p>
+      {% include soon.html %}
+    </article>
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">04 · Mind</span>
+      <h3>Master the mind</h3>
+      <p class="sf-apps">beStillAndKnow + MindHeist</p>
+      <p>Visualization and self-image work, plus mental jiu-jitsu: spot the people knocking your status down.</p>
+      {% include soon.html %}
+    </article>
+  </div>
+
+  <a href="{{ '/apps/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">Meet the apps</a>
+</section>
+
+<hr class="sw-home__wave-line">
+
+<div class="sw-home__bento">
+  <div class="sw-home__glass sw-home__panel sw-home__panel--accent">
+    <span class="sw-home__label">Why listen to me</span>
+    <p class="sw-home__panel-title">Black belt. Almost no injuries. Barely missed a day of training.</p>
+    <p>Most people don't survive jiu-jitsu. They get hurt, take a month off, then another, then stop. I made it to black belt with almost no time off the mats, because looking after the hardware was priority number one, not number 24.</p>
+    <p class="mb-3">The suite is the system I use, turned into apps.</p>
+    <a href="{{ '/about/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">My story</a>
+  </div>
+  <div class="sw-home__glass sw-home__panel sw-home__panel--center">
+    <span class="sw-home__label">Point of view</span>
+    <blockquote class="sw-home__quote sf-quote">
+      <p>Train like age is a choice.</p>
+      <footer>Age isn't trips around the sun. It's years of putting your body at #24 on the list. Don't outsource your limits.</footer>
+    </blockquote>
+  </div>
+</div>
+
+<hr class="sw-home__wave-line">
+
+<section aria-labelledby="guides-title">
+  <span class="sw-home__label">Free guides</span>
+  <h2 class="sf-section-title" id="guides-title">Start with what hurts.</h2>
+  <p class="sw-home__lead">Short, free routines for the problems grapplers actually have. Each one opens straight into bioMechanic.</p>
+
+  <div class="sw-home__grid sw-home__grid--4">
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">Spine</span>
+      <h3>Spine solutions</h3>
+      <p>Think global, act local. Neck pain can start at the hips.</p>
+      {% include soon.html text="Coming soon" %}
+    </article>
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">Neck</span>
+      <h3>Neck maintenance</h3>
+      <p>A short daily routine for the neck that hurts when you shoulder-check.</p>
+      {% include soon.html text="Coming soon" %}
+    </article>
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">Fingers</span>
+      <h3>Finger conditioning</h3>
+      <p>Train the direction your fingers never get trained, before a gi sleeve does it for you.</p>
+      {% include soon.html text="Coming soon" %}
+    </article>
+    <article class="sw-home__glass sw-home__card">
+      <span class="sw-home__label">Legs</span>
+      <h3>Leg lock confidence</h3>
+      <p>Get your ankles and knees ready, and learn the three escape principles.</p>
+      {% include soon.html text="Coming soon" %}
+    </article>
+  </div>
+
+  <a href="{{ '/guides/' | relative_url }}" class="sw-home__btn sw-home__btn--ghost">About the guides</a>
+</section>
+
+<hr class="sw-home__wave-line">
+
+{% include waitlist.html %}
