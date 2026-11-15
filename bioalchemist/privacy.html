@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy — bioAlchemist</title>
+  <meta name="description" content="Privacy policy for the bioAlchemist app: what stays on the phone, and what leaves it.">
+  <meta name="theme-color" content="#193AE7">
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Mono:wght@400;500&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="./support">
+        <img src="./assets/logo.png" width="32" height="32" alt="">
+        bioAlchemist
+      </a>
+      <ul class="nav-links">
+        <li><a href="./privacy" aria-current="page">Privacy</a></li>
+        <li><a href="./support">Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="wrap">
+      <header>
+        <h1>Privacy</h1>
+        <p class="updated">Last updated September 30, 2026</p>
+      </header>
+      <div class="prose">
+        <p>bioAlchemist is an iPhone nutrition and body tracker. This page describes what the current app stores and what it sends off the device. Operator: Spherical Wave Software.</p>
+
+        <h2>Your food log</h2>
+        <p>Foods, dishes, meals, water, grocery lists, Suit samples, targets, and your Avatar live in the app’s Core Data store on the device and sync to your own private iCloud account through Apple’s CloudKit, so a new iPhone signed in to the same iCloud account gets them back. bioAlchemist cannot read your iCloud data.</p>
+
+        <h2>No account</h2>
+        <p>There is no sign-in. On first launch the app creates a random install ID and a secret key, kept in the iPhone’s Keychain, which it uses to talk to our server. The install ID is not your name, Apple ID, or a device identifier.</p>
+
+        <h2>Onboarding survey and email</h2>
+        <p>When you finish onboarding, the app sends your answers to our server (run on Cloudflare) so we can understand who uses the app: goals, nutrition challenges, diet styles and foods you avoid, weekly activity, jiu-jitsu training and belt, meals per day, food budget, sex, birth year, height, weight, waist, body fat, and your username.</p>
+        <p>The “Get Your Plan” step asks for an email and can be skipped. If you give one, it is stored on the server and added to our email list, tagged with a few of your answers so the emails fit you. Every email has an unsubscribe link. If you cancel your subscription, your answer to the short cancellation survey is sent too. We do not sell any of it.</p>
+
+        <h2>Daily review (optional)</h2>
+        <p>If you run the daily review’s AI summary, bioAlchemist sends that day’s calories, protein, fat, carbs, water ounces, weight, body fat, active energy, resting heart rate, and HRV to our server, which asks Anthropic’s Claude to write three sentences. The server keeps only a count of reviews per install, to cap usage, not the numbers themselves. Anthropic does not use API requests to train its models. If you skip the summary, nothing is sent.</p>
+
+        <h2>Barcode and food search</h2>
+        <p>Looking up a barcode or searching the food catalog queries Open Food Facts (<code>world.openfoodfacts.org</code>). The query is the barcode or the search text. Hits can be saved into your local library.</p>
+
+        <h2>HealthKit</h2>
+        <p>If you grant access, bioAlchemist reads health and fitness samples (weight, energy, heart rate, HRV, sleep, steps, VO2 max, and similar) and can write measurements back. HealthKit data is used to show charts and to help set energy targets. It is not sold, and it is not used for advertising.</p>
+
+        <h2>Camera and photos</h2>
+        <p>The camera is used to scan barcodes and to photograph foods. Photos you attach stay with the local records. The photo library is only read when you pick an image.</p>
+
+        <h2>Subscriptions</h2>
+        <p>bioAlchemist Gold is sold through Apple. RevenueCat sees subscription status, under your install ID, so the app can unlock logging, editing and deleting. Without Gold the app is read-only: what you've already logged stays viewable. Apple processes payment. bioAlchemist does not store card numbers.</p>
+
+        <h2>Notifications</h2>
+        <p>Water reminders and other alerts are local notifications scheduled on the device. They are not push messages from our server.</p>
+
+        <h2>What we do not do</h2>
+        <ul>
+          <li>No advertising SDK</li>
+          <li>No sale of email or survey data</li>
+          <li>No Google or Firebase services</li>
+          <li>No copy of your food log on our server</li>
+        </ul>
+
+        <h2>Children</h2>
+        <p>bioAlchemist is not directed at children under 13.</p>
+
+        <h2>Deletion</h2>
+        <p>Settings → Account → Delete My Server Data removes everything our server holds for your install (survey answers, email, cancellation answers, and push token) and unsubscribes your email. Your food log stays on the iPhone and in iCloud: delete the app to remove it from the phone, and remove the app’s data in iCloud settings to remove the synced copy.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes, the date at the top of this page will change with it.</p>
+
+        <h2>Contact</h2>
+        <p>Privacy questions: <!-- TODO: privacy email address not chosen yet. Replace this placeholder with a mailto link. --><strong>[TODO: privacy email]</strong>. Everything else: <a href="./support">Support</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>bioAlchemist · Spherical Wave Software</span>
+      <nav>
+        <a href="./privacy">Privacy</a>
+        <a href="./support">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
