@@ -32,7 +32,7 @@
     <div class="wrap">
       <header>
         <h1>Privacy</h1>
-        <p class="updated">Last updated September 30, 2026</p>
+        <p class="updated">Last updated November 14, 2026</p>
       </header>
       <div class="prose">
         <p>bioAlchemist is an iPhone nutrition and body tracker. This page describes what the current app stores and what it sends off the device. Operator: Spherical Wave Software.</p>
@@ -47,8 +47,16 @@
         <p>When you finish onboarding, the app sends your answers to our server (run on Cloudflare) so we can understand who uses the app: goals, nutrition challenges, diet styles and foods you avoid, weekly activity, jiu-jitsu training and belt, meals per day, food budget, sex, birth year, height, weight, waist, body fat, and your username.</p>
         <p>The “Get Your Plan” step asks for an email and can be skipped. If you give one, it is stored on the server and added to our email list, tagged with a few of your answers so the emails fit you. Every email has an unsubscribe link. If you cancel your subscription, your answer to the short cancellation survey is sent too. We do not sell any of it.</p>
 
-        <h2>Daily review (optional)</h2>
-        <p>If you run the daily review’s AI summary, bioAlchemist sends that day’s calories, protein, fat, carbs, water ounces, weight, body fat, active energy, resting heart rate, and HRV to our server, which asks Anthropic’s Claude to write three sentences. The server keeps only a count of reviews per install, to cap usage, not the numbers themselves. Anthropic does not use API requests to train its models. If you skip the summary, nothing is sent.</p>
+        <h2>AI processing (optional, asks first)</h2>
+        <p>Two features use Anthropic’s Claude, a third-party AI service. Each asks your permission the first time, before anything is sent. If you choose “Don’t Allow”, that feature is off and nothing is sent. You can turn either one on or off at any time in Settings → AI Features.</p>
+        <ul>
+          <li><strong>Daily review summary.</strong> Sends that day’s calories, protein, fat, carbs, water ounces, weight, body fat, active energy, resting heart rate, and HRV to our server, which asks Claude to write three sentences about your day. The server keeps only a count of reviews per install, to cap usage, not the numbers themselves.</li>
+          <li><strong>Recipe reading.</strong> When you tap “Re-read with AI” while importing a recipe, the caption text is sent to our server, which asks Claude to pick out the ingredients and steps. The server keeps that reading, keyed by a hash of the caption, so the same caption isn’t sent twice, plus a count of readings per install to cap usage.</li>
+        </ul>
+        <p>No name, email, Apple ID, or install ID is sent to Anthropic. Anthropic processes the request to return the answer and does not use API requests to train its models; see <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a>.</p>
+
+        <h2>Recipe links</h2>
+        <p>When you paste or share a recipe link, the app asks our server for the post’s caption and may also fetch the page itself. The server may keep a cached copy of a public post’s caption, keyed by its link. Only the page text is read; videos are not downloaded.</p>
 
         <h2>Barcode and food search</h2>
         <p>Looking up a barcode or searching the food catalog queries Open Food Facts (<code>world.openfoodfacts.org</code>). The query is the barcode or the search text. Hits can be saved into your local library.</p>
